@@ -9,12 +9,23 @@
     </head>
     <body>
         <header class="page-header">
-          <div class="container">
-              <h1><a href="/">Django Girls Blog</a></h1>
-          </div>
-        </header>
+            <div class="container">
+                
+                <a href="{% url 'post_new' %}" class="top-menu">
+                    {% include './icons/file-earmark-plus.svg' %}
+                </a>
+                <h1><a href="/">Django Girls Blog</a></h1>
+                <br>
+                <a style="color: rgb(230, 237, 98); font-weight: bold;">click the title of the blog to "DOWNLOAD THE BLOG"</a><br>
+                <a style="color: rgb(200, 210, 91); font-weight: bold; font-size: small;">(download each blog one by one only)</a>
 
-        <main class="container">
+                
+                
+
+            </div>
+        </header>
+    
+        <main class="content container">
             <div class="row">
                 <div class="col">
                     {% block content %}
